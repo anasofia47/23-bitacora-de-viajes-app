@@ -50,7 +50,8 @@
         {
           "motionPermission": "Bitácora de Viajes accede al barómetro y podómetro para suavizar el desnivel y contar los pasos del recorrido."
         }
-      ]
+      ],
+      "expo-web-browser"
     ]
   }
 }
