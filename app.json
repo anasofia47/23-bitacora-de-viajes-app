@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Bitácora de Viajes y Caminatas",
+    "slug": "23-bitacora-de-viajes-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "bitacoraviajes",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Bitácora de Viajes necesita tu ubicación GPS para trazar la ruta y calcular la distancia y altitud del recorrido.",
+        "NSMotionUsageDescription": "Bitácora de Viajes utiliza el barómetro y el podómetro para medir el desnivel con precisión y contar los pasos de tu caminata.",
+        "NSCameraUsageDescription": "Bitácora de Viajes utiliza la cámara para tomar fotos geolocalizadas durante el recorrido.",
+        "NSPhotoLibraryUsageDescription": "Bitácora de Viajes permite adjuntar fotos desde tu galería como alternativa a la cámara."
+      }
+    },
+    "android": {
+      "package": "com.anasofia47.bitacoraviajes",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "ACTIVITY_RECOGNITION"
+      ]
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Bitácora de Viajes usa tu ubicación mientras grabas un recorrido para trazar la ruta GPS y estimar la distancia."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Bitácora de Viajes usa la cámara para capturar fotos geolocalizadas en puntos de tu recorrido.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Bitácora de Viajes accede al barómetro y podómetro para suavizar el desnivel y contar los pasos del recorrido."
+        }
+      ]
+    ]
+  }
+}
