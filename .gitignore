@@ -1,0 +1,40 @@
+# Dependencias
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Nativos / Compilados
+android/
+ios/
+*.apk
+*.aab
+*.ipa
+
+# Variables de entorno y secretos (NUNCA versionar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+*.jks
+*.p12
+*.pfx
+*firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+credenciales*.txt
+
+# Logs & Test coverage
+coverage/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS
+.DS_Store
+Thumbs.db
